@@ -6,9 +6,9 @@ import os
 import argparse
 
 parser=argparse.ArgumentParser("Provide the zipped whatsapp file and the name of the two participatnts")
-parser.add_argument('--zip',help="zipped whatapp chat archive")
-parser.add_argument('-p1',help="first person")
-parser.add_argument('-p2',help="second person")
+parser.add_argument('--zip',help="zipped whatapp chat archive",required=True)
+parser.add_argument('-p1',help="first person",required=True)
+parser.add_argument('-p2',help="second person",required=True)
 args=parser.parse_args()
 
 
